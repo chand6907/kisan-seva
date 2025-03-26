@@ -1,7 +1,6 @@
 # AgroAI: Empowering Farmers Through Technology
 
-![AgroAI Logo](![Image](https://github.com/user-attachments/assets/9029b35a-a4a4-4d64-b06f-3bfc0322453e))
-
+![Image](https://github.com/user-attachments/assets/26f7c414-7b0a-4c6f-9976-8262f08f0f6a)
 ## 🌾 Project Overview
 
 AgroAI is an innovative AI-driven agricultural marketplace designed to transform farming by connecting farmers directly to customers and providing cutting-edge technological solutions.
