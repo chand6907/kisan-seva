@@ -1,35 +1,38 @@
 # AgroAI: Empowering Farmers Through Technology
 
-![AgroAI Logo](path/to/logo.png)
+![AgroAI Logo](![Image](https://github.com/user-attachments/assets/9029b35a-a4a4-4d64-b06f-3bfc0322453e))
 
 ## 🌾 Project Overview
 
 AgroAI is an innovative AI-driven agricultural marketplace designed to transform farming by connecting farmers directly to customers and providing cutting-edge technological solutions.
 
 ## 🚀 Key Features
+![Image](https://github.com/user-attachments/assets/48eed993-9dcd-45b1-860f-cd76622798f2)
+
+![Image](https://github.com/user-attachments/assets/e0f9d153-798f-4f8e-a786-119dfb9b40a3)
+
+
 
 ### 1. Personalized Crop Recommendation
-![Crop Recommendation](path/to/crop-recommendation.png)
 - AI-powered system analyzing soil data, weather conditions, and market trends
 - Suggests optimal crops to improve yield and profitability
 
 ### 2. Weather & Pest Alerts
-![Weather Alerts](path/to/weather-alerts.png)
 - Real-time weather predictions
 - Pest outbreak alerts via API integrations
 - Early warning systems to reduce agricultural losses
 
 ### 3. AI-Powered Plant Disease Detection
-![Plant Disease Detection](path/to/disease-detection.png)
 - Upload crop leaf images
 - CNN model identifies diseases
 - Provides actionable treatment solutions
 
 ### 4. Direct Marketplace
-![Market Connection](path/to/marketplace.png)
 - Direct connection between farmers and customers
 - Transparent pricing
 - Eliminates middlemen exploitation
+
+- 
 
 ## 💡 Key Benefits
 
@@ -46,6 +49,11 @@ AgroAI is an innovative AI-driven agricultural marketplace designed to transform
   - Convolutional Neural Networks (CNN)
   - Machine Learning Algorithms
 - Database: [Specify Database]
+
+  ###Easy to use
+  ![Image](https://github.com/user-attachments/assets/7909a881-9117-4d40-9d65-af5e549b4e76)
+
+![Image](https://github.com/user-attachments/assets/0fc2a307-062a-4a3a-89ff-2dc484678026)
 
 ## 🚀 Getting Started
 
@@ -86,7 +94,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 📞 Contact
 
-- Project Link: [https://github.com/yourusername/AgroAI](https://github.com/yourusername/AgroAI)
+![Image](https://github.com/user-attachments/assets/aee215db-9d55-4aef-8773-5e9392592273)
+
+- Project Link: [https://github.com/yourusername/AgroAI](https://github.com/chand6907/AgroAI)
 - Website: [AgroAI Website](https://www.agroai.com)
 - Email: contact@agroai.com
 
