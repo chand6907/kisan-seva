@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(/Img/Weather@2x.svg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #ff6b6b, #f06595);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .login-btn:hover {
+            background: linear-gradient(45deg, #f06595, #ff6b6b);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .login-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .login-popup h2 {
+            margin-top: 0;
+        }
+        .login-popup input, .login-popup select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-popup button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-popup button:hover {
+            background: #0056b3;
+        }
+        #map {
+            height: 200px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+</head>
+<body>
+    <button class="login-btn" onclick="showLoginPopup()">User Login</button>
+    <div class="login-popup" id="loginPopup">
+        <h2>Customer Register</h2>
+        <div id="map"></div>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="text" placeholder="Address" required>
+        <input type="text" id="city" placeholder="City" required>
+        <select id="state" required onchange="populateCities()">
+            <option value="" disabled selected>Select State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+        </select>
+        <button onclick="login()">Submit</button>
+    </div>
+    <script>
+        let map, marker;
+
+        function showLoginPopup() {
+            document.getElementById('loginPopup').style.display = 'block';
+            initMap();
+        }
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 20.5937, lng: 78.9629 },
+                zoom: 5
+            });
+
+            marker = new google.maps.Marker({
+                position: { lat: 20.5937, lng: 78.9629 },
+                map: map,
+                draggable: true
+            });
+
+            google.maps.event.addListener(marker, 'dragend', function() {
+                const geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ 'location': marker.getPosition() }, function(results, status) {
+                    if (status === 'OK') {
+                        if (results[0]) {
+                            const addressComponents = results[0].address_components;
+                            for (let i = 0; i < addressComponents.length; i++) {
+                                if (addressComponents[i].types.includes('locality')) {
+                                    document.getElementById('city').value = addressComponents[i].long_name;
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        }
+
+        function populateCities() {
+            const state = document.getElementById('state').value;
+            const citySelect = document.getElementById('city');
+            citySelect.innerHTML = '<option value="" disabled selected>Select City</option>';
+
+            const cities = {
+                "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur"],
+                "Arunachal Pradesh": ["Itanagar", "Tawang", "Ziro"],
+                "Assam": ["Guwahati", "Dibrugarh", "Silchar"],
+                "Bihar": ["Patna", "Gaya", "Bhagalpur"],
+                "Chhattisgarh": ["Raipur", "Bilaspur", "Durg"],
+                "Goa": ["Panaji", "Margao", "Vasco da Gama"],
+                "Gujarat": ["Ahmedabad", "Surat", "Vadodara"],
+                "Haryana": ["Chandigarh", "Gurgaon", "Faridabad"],
+                "Himachal Pradesh": ["Shimla", "Manali", "Dharamshala"],
+                "Jharkhand": ["Ranchi", "Jamshedpur", "Dhanbad"],
+                "Karnataka": ["Bengaluru", "Mysuru", "Mangaluru"],
+                "Kerala": ["Thiruvananthapuram", "Kochi", "Kozhikode"],
+                "Madhya Pradesh": ["Bhopal", "Indore", "Gwalior"],
+                "Maharashtra": ["Mumbai", "Pune", "Nagpur"],
+                "Manipur": ["Imphal", "Bishnupur", "Thoubal"],
+                "Meghalaya": ["Shillong", "Tura", "Nongpoh"],
+                "Mizoram": ["Aizawl", "Lunglei", "Champhai"],
+                "Nagaland": ["Kohima", "Dimapur", "Mokokchung"],
+                "Odisha": ["Bhubaneswar", "Cuttack", "Rourkela"],
+                "Punjab": ["Chandigarh", "Ludhiana", "Amritsar"],
+                "Rajasthan": ["Jaipur", "Udaipur", "Jodhpur"],
+                "Sikkim": ["Gangtok", "Namchi", "Geyzing"],
+                "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai"],
+                "Telangana": ["Hyderabad", "Warangal", "Nizamabad"],
+                "Tripura": ["Agartala", "Udaipur", "Dharmanagar"],
+                "Uttar Pradesh": ["Lucknow", "Kanpur", "Varanasi"],
+                "Uttarakhand": ["Dehradun", "Haridwar", "Nainital"],
+                "West Bengal": ["Kolkata", "Darjeeling", "Siliguri"]
+            };
+
+            if (cities[state]) {
+                cities[state].forEach(city => {
+                    const option = document.createElement('option');
+                    option.value = city;
+                    option.textContent = city;
+                    citySelect.appendChild(option);
+                });
+            }
+        }
+
+        function login() {
+            // Add login functionality here
+            alert('Login functionality not implemented.');
+        }
+    </script>
+</body>
+</html>

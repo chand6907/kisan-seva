@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/Img/Group 11.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroAI</title>
+    <link rel="stylesheet" href="fam.css">
+    <!-- <link rel="shortcut icon" href="Img/Group 6.png" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo"> <img src="/Img/Group 11.png" width="60px" alt=""> </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#marketplace">Marketplace</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="darkModeToggle" class="btn"><ion-icon name="moon-outline"></ion-icon></button></li> a
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 id="hero-title">AI-Driven Agricultural Marketplace</h1>
+            <p id="hero-text">Connecting farmers directly to customers through AI-powered recommendations, disease detection, and market access.</p>
+            <div class="hero-buttons">
+                <button class="btn farmer-btn" onclick="openLoginModal('farmer')"><a href="loginForm.html">Login</a></button>
+                <button class="btn customer-btn" onclick="openLoginModal('customer')">Customer Login</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Our innovative platform offers comprehensive solutions tailored for small and marginal farmers.</p>
+            </div>
+            
+            <div class="features-grid">
+
+                <!-- Crop Recommendation Feature -->
+
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="Img/crop.jpeg" alt="Crop Recommendation" class="feature-image">
+                    </div>
+                    <div class="feature-content">
+                        <h3 id="feature1-title">Personalized Crop Recommendation</h3>
+                        <p id="feature1-text">
+                            Based on soil data, weather conditions, and current market trends, our AI-powered system suggests optimal crops to improve yield and profitability.
+                        </p>
+                        <button class="btn learn-more-btn" onclick="learnMore('crop-recommendation')">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="Img/Weather@2x.svg" alt="Weather Alerts" class="feature-image">
+                    </div>
+                    <div class="feature-content">
+                        <h3 id="feature2-title">Weather & Pest Alerts</h3>
+                        <p id="feature2-text">Real-time weather predictions and pest outbreak alerts via API integrations. Early warnings to reduce losses.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="Img/disease-detection.jpeg" alt="Disease Detection" class="feature-image">
+                    </div>
+                    <div class="feature-content">
+                        <h3 id="feature3-title">AI-Powered Plant Disease Detection</h3>
+                        <p id="feature3-text">Farmers upload images of crop leaves; a CNN model identifies diseases. Provides actionable solutions for treatment.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card highlight-feature">
+                    <div class="feature-icon">
+                        <img src="Img/MacBook Air - 1.png" alt="Market Portal" class="feature-image">
+                    </div>
+                    <div class="feature-content">
+                        <h3 id="feature4-title">Market Connection Portal</h3>
+                        <p id="feature4-text">Direct connection between farmers and customers. Transparency in pricing, cutting down middlemen exploitation. Buy and sell fresh produce directly!</p>
+                        <a href="#marketplace" class="feature-link">Explore Marketplace</a>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="Img/multi.svg" alt="Farmer Dashboard" class="feature-image">
+                    </div>
+                    <div class="feature-content">
+                        <h3 id="feature5-title">Multilingual, Intuitive Dashboard</h3>
+                        <p id="feature5-text">Designed for ease of use, with visuals and local language support. Low-data, lightweight design for rural areas.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="Img/multi.svg" alt="Farmer Dashboard" class="feature-image">
+                    </div>
+                    <div class="feature-content">
+                        <h3 id="feature5-title">Connect Directly to Customers</h3>
+                        <p id="feature5-text">Designed for ease of use, with visuals and local language support. Low-data, lightweight design for rural areas.</p>
+                        <a href="formerform.html"> <button class="transparent-btn">Registe Your Product</button></a>
+                    </div>
+                </div>
+                
+                <style>
+                    .transparent-btn {
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #4caf50;
+                        background: none;
+                        border: 2px solid #4caf50;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    }
+                    .transparent-btn:hover {
+                        background: #4caf50;
+                        color: white;
+                    }
+                </style>
+
+
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact" id="impact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expected Impact</h2>
+                <p>Our solution aims to create meaningful change in the agricultural ecosystem.</p>
+            </div>
+            
+            <div class="impact-items">
+                <div class="impact-item">
+                    <img src="images/income.jpg" alt="Increased Income" class="impact-image">
+                    <h3 id="impact1-title">Increased Farmer Income</h3>
+                    <p id="impact1-text">Optimal crop planning & direct market access leading to better profits for farmers.</p>
+                </div>
+                
+                <div class="impact-item">
+                    <img src="images/reduced-losses.jpg" alt="Reduced Losses" class="impact-image">
+                    <h3 id="impact2-title">Reduced Losses</h3>
+                    <p id="impact2-text">Proactive pest & weather alerts, early disease detection helping minimize crop damage.</p>
+                </div>
+                
+                <div class="impact-item">
+                    <img src="images/empowerment.jpg" alt="Empowerment" class="impact-image">
+                    <h3 id="impact3-title">Empowerment</h3>
+                    <p id="impact3-text">Digital inclusion & localized AI recommendations enabling better decision-making.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 id="cta-title">Ready to Transform Agriculture?</h2>
+                <p id="cta-text">Join thousands of farmers and customers who are already benefiting from our direct marketplace.</p>
+                <div class="cta-buttons">
+                    <button class="btn" onclick="openLoginModal('farmer')">Farmer Sign Up</button>
+                    <button class="btn" onclick="openLoginModal('customer')">Customer Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo"> </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#marketplace">Marketplace</a>
+                    <a href="#impact">Impact</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p id="footer-text">© 2025 AgroAI. Empowering farmers through technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="login-modal-title">Farmer Login</h2>
+            <div id="login-form-container" class="login-form">
+                <!-- Login form will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="fam.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
