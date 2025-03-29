@@ -56,13 +56,9 @@ AgroAI is an innovative AI-driven agricultural marketplace designed to transform
 
   ###Easy to use
   ### Landing Page
-![Landing Page](path/to/landing-page.png)
   ![Image](https://github.com/user-attachments/assets/7909a881-9117-4d40-9d65-af5e549b4e76)
 ### Product Registration
 ![Image](https://github.com/user-attachments/assets/0fc2a307-062a-4a3a-89ff-2dc484678026)
-
-### Backened Dashboard
-![Image](https://github.com/user-attachments/assets/aad1c125-0b03-4e74-8d9c-b50bfcfdc817)
 
 ## 🚀 Getting Started
 
@@ -101,12 +97,14 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for deta
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## 📞 Contact
+### Backened Dashboard
+![Image](https://github.com/user-attachments/assets/aad1c125-0b03-4e74-8d9c-b50bfcfdc817)
 
+## 📞 Contact
 ![Image](https://github.com/user-attachments/assets/aee215db-9d55-4aef-8773-5e9392592273)
 
-- Project Link: [https://github.com/yourusername/AgroAI](https://github.com/chand6907/AgroAI)
-- Website: [AgroAI Website](https://www.agroai.com)
+- Project Link: [https://github.com/chand6907/kisan-seva](https://github.com/chand6907/kisan-seva)
+- Website: [AgroAI Website]([https://www.agroai.com](https://private-user-images.githubusercontent.com/157565448/428274184-f40cbfc5-1c9c-4af5-88aa-5c3519afeb82.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMyMzEzNDQsIm5iZiI6MTc0MzIzMTA0NCwicGF0aCI6Ii8xNTc1NjU0NDgvNDI4Mjc0MTg0LWY0MGNiZmM1LTFjOWMtNGFmNS04OGFhLTVjMzUxOWFmZWI4Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyOVQwNjUwNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YjgwODAzOTdhYmIxNmVhNzRiZjVhMDYyZDM3YjA5ZTViYmI0NmE4MjA0NzY3Y2UzNDE1ZTYyNWQ1ODkzNmM3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Z8fHpFwg5NuuhG5XRjgeVAkQeLcLhOScmb8ae_2rm7I))
 - Email: contact@agroai.com
 
 ## 🌟 Acknowledgments
