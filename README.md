@@ -1,3 +1,5 @@
+# Team & Theme 
+![Image](https://github.com/user-attachments/assets/f40cbfc5-1c9c-4af5-88aa-5c3519afeb82)
 # AgroAI: Empowering Farmers Through Technology
 
 ![Image](https://github.com/user-attachments/assets/26f7c414-7b0a-4c6f-9976-8262f08f0f6a)
