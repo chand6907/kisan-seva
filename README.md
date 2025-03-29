@@ -55,9 +55,14 @@ AgroAI is an innovative AI-driven agricultural marketplace designed to transform
 - Database: [Specify Database]
 
   ###Easy to use
+  ### Landing Page
+![Landing Page](path/to/landing-page.png)
   ![Image](https://github.com/user-attachments/assets/7909a881-9117-4d40-9d65-af5e549b4e76)
-
+### Product Registration
 ![Image](https://github.com/user-attachments/assets/0fc2a307-062a-4a3a-89ff-2dc484678026)
+
+### Backened Dashboard
+![Image](https://github.com/user-attachments/assets/aad1c125-0b03-4e74-8d9c-b50bfcfdc817)
 
 ## 🚀 Getting Started
 
@@ -112,14 +117,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 **© 2025 AgroAI - Empowering farmers through technology**
 
-## Screenshots
-![Image](https://github.com/user-attachments/assets/aad1c125-0b03-4e74-8d9c-b50bfcfdc817)
-
-### Landing Page
-![Landing Page](path/to/landing-page.png)
-
-### Product Registration
-![Product Registration](path/to/product-registration.png)
-
-### Dashboard
-![Dashboard](path/to/dashboard.png)
