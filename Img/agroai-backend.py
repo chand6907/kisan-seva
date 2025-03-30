@@ -214,5 +214,6 @@ python app.py
 curl -X POST http://localhost:5000/crop-recommendation \
      -H "Content-Type: application/json" \
      -d '{"soil_type": 0.7, "moisture": 0.6, "temperature": 25, "rainfall": 60, "nutrients": 0.5}'
+     BY : Chand and George
 ```
 """
