@@ -109,7 +109,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## 🌟 Acknowledgments
 
 - [List any contributors, inspirations, or resources]
-
 ---
 
 **© 2025 AgroAI - Empowering farmers through technology**
