@@ -12,7 +12,6 @@ AgroAI is an innovative AI-driven agricultural marketplace designed to transform
 
 ## 🚀 Key Features
 ![Image](https://github.com/user-attachments/assets/48eed993-9dcd-45b1-860f-cd76622798f2)
-
 ![Image](https://github.com/user-attachments/assets/e0f9d153-798f-4f8e-a786-119dfb9b40a3)
 
 
